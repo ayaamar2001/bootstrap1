@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+/* small screen */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium screen */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large screen */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #CCCCFF !important;
+}
+
+a:hover {
+    color: white !important;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+
+i {
+    font-size: 25px;
+    color: black;
+}
+
+.card-title {
+    color: black;
+}
+
+.accordion-button:hover {
+    background-color: black;
+    color: white
+}
+
+.fixedimg {
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../images/main\ \(15\).jpeg);
+
+}
+
+
+.dropdown-menu li a {
+    text-shadow: 1px 1px 0px black;
+}
+
+.carousel-inner h1 {
+    text-shadow: 1px 1px #333;
+}
+
+.carousel-inner .carousel-caption {
+    background: rgba(192, 191, 187, 0.3);
+    border-radius: 7px;
+}
+
+.card-body h2 {
+    font-size: 40px;
+}
+
+.btnbefo {
+    position: relative;
+    left: 30px;
+}
+
+.btnbefo::before {
+    position: absolute;
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent lightblue transparent;
+    top: 20px;
+    left: 13px;
+    display: none;
+}
+
+.btnbefo::after {
+    position: absolute;
+    content: " ";
+    height: 40px;
+    width: 80px;
+    background-color: lightblue;
+    top: 40px;
+    left: -15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.btnbefo:active::before,
+.btn:hover::before {
+    display: block;
+
+}
+
+.btnbefo:hover::after {
+    content: "copy to clipboard";
+    display: block;
+}
+
+.btnbefo:active::after {
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+
+.navbar-brand {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.navbar-brand:hover {
+    text-shadow: 10px 10px 20px white,
+        -10px -10px 20px white;
+}
+
+.myicon {
+    height: 35px;
+    width: 35px;
+    border: 1px solid rgb(65, 158, 219);
+    border-radius: 50%;
+
+}
+
+code {
+    font-size: 18px !important;
+}
